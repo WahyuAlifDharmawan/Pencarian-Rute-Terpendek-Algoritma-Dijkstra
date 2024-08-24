@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background: #111;
+    position: fixed;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.sidebar a {
+    padding: 10px 8px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    /* Menambahkan cursor pointer untuk menandakan bahwa header dapat diklik */
+}
+
+.menu-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.logout {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #BF3131;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Tabel styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4caf50;
+    color: white;
+}

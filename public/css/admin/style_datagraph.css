@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background: #111;
+    position: fixed;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.sidebar a {
+    padding: 10px 8px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 15px;
+    text-align: center;
+}
+
+.header {
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    /* Menambahkan cursor pointer untuk menandakan bahwa header dapat diklik */
+}
+
+.menu-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.logout {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #BF3131;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/* Styling for map container */
+#map {
+    width: 80%;
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 120px;
+    margin-right: 170px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#routeTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#routeTable th,
+#routeTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#routeTable th {
+    background-color: #f2f2f2;
+}
+
+#routeTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#routeTable tr:hover {
+    background-color: #ddd;
+}
+
+#markerForm {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.selected-nodes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selected-node {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.selected-node button {
+    background: none;
+    border: none;
+    color: red;
+    margin-left: 5px;
+    cursor: pointer;
+}
+#nodesTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#nodesTable th,
+#nodesTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#nodesTable th {
+    background-color: #f2f2f2;
+}
+
+#nodesTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#nodesTable tr:hover {
+    background-color: #ddd;
+}

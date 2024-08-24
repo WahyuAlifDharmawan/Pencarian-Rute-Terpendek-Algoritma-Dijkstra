@@ -1,0 +1,22 @@
+# Ignore writable directory
+writable/*
+
+# Ignore environment file
+.env
+
+# Ignore Composer's vendor directory
+vendor/
+
+# Ignore Node.js modules
+node_modules/
+
+# Ignore public uploads (if you have user uploads)
+public/uploads/
+
+# Ignore IDE-specific files (optional, depending on your IDE)
+.vscode/
+.idea/
+
+# Ignore system files (optional, for macOS and Windows)
+.DS_Store
+Thumbs.db

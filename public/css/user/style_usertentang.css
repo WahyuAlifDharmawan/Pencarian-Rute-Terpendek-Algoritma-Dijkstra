@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+body {
+    margin: 0;
+    background: #fefefe;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background: #2C3E50;
+    padding: 20px 0;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 15px;
+    position: relative;
+}
+
+nav a {
+    color: #ECF0F1;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.Tentang-Web {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    margin-top: 50px;
+    padding: 50px 20px;
+    text-align: center;
+    padding-bottom: 170px;
+}
+
+.tentang-website {
+    width: 80%;
+    padding: 20px;
+    background-color: #BFCFE7;
+    border: 0px solid #050505;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 400; /* Normal weight for content */
+}
+
+.gambar-logo {
+    max-width: 40px;
+    max-height: 40px;
+    flex: 1;
+}
+
+.Tentang-Web h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px; /* Ubah ukuran font judul */
+    font-weight: 600; /* Memberikan sedikit penekanan pada judul */
+}
+
+footer {
+    text-align: center;
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 7px 7px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

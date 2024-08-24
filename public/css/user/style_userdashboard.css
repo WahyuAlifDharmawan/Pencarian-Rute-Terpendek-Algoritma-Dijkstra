@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+body {
+    margin: 0;
+    background: #ECF0F1;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background: #2C3E50;
+    padding: 20px 0;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    color: #ECF0F1;
+
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 15px;
+    position: relative;
+}
+
+nav a {
+    color: #ECF0F1;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.Tentang-Bergas {
+    display: flex;
+    justify-content: space-between;
+    /* Menempatkan elemen ke ujung kanan dan kiri */
+    border-width: 1px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 15px;
+    padding-bottom: 50px;
+    background-color: #BFCFE7;
+    border-radius: 2%;
+}
+
+.tentang-content {
+    width: 80%;
+    /* Sesuaikan dengan lebar yang diinginkan */
+    padding: 20px;
+    /* Sesuaikan dengan kebutuhan Anda */
+    background-color: white;
+    /* Warna latar belakang konten */
+    border: 3px solid #050505;
+    /* Warna dan ketebalan garis kotak */
+    border-radius: 10px;
+    /* Membuat sudut kotak menjadi melengkung */
+}
+
+.gambar-logo img {
+    width: 40px;
+    /* Ubah ukuran maksimum lebar gambar */
+    height: 40px;
+    /* Ubah ukuran maksimum tinggi gambar */
+    flex: 1;
+}
+
+
+.Tentang-Bergas h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    /* Sesuaikan dengan kebutuhan Anda */
+}
+
+
+.jumlah-wrapper {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    /* Pusatkan elemen secara horizontal */
+    padding: 2rem;
+    /* Tambahkan padding untuk ruang ekstra */
+}
+
+.nama-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #2980B9;
+    border-radius: 0.5rem;
+    /* Tambahkan border-radius untuk sudut yang lebih halus */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Tingkatkan shadow untuk efek mendalam */
+    width: 150px;
+    /* Sesuaikan dengan lebar yang diinginkan */
+    transition: transform 0.3s;
+    /* Tambahkan animasi untuk efek hover */
+    background: linear-gradient(135deg, #007bff, #2980B9);
+    /* Tambahkan gradien latar belakang */
+}
+
+.nama-box:hover {
+    transform: scale(1.05);
+    /* Efek zoom saat hover */
+}
+
+.jumlah-box {
+    background-color: #fff;
+    padding: 1.5rem;
+    /* Tingkatkan padding untuk ruang ekstra */
+    width: 100%;
+    text-align: center;
+}
+
+.jumlah-box h2 {
+    font-size: 2rem;
+    /* Besarkan ukuran font */
+    font-weight: bold;
+    /* Tingkatkan ketebalan font */
+    margin: 0;
+    /* Hilangkan margin */
+}
+
+.nama-box p {
+    background-color: rgba(0, 123, 255, 0.9);
+    /* Buat latar belakang sedikit transparan */
+    color: white;
+    margin: 0;
+    padding: 0.75rem;
+    /* Tingkatkan padding untuk ruang ekstra */
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    /* Tambahkan ketebalan font */
+}
+
+
+/* CSS untuk bagian kiri */
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #BFCFE7;
+    border-right: 1px solid #ccc;
+    flex: 1;
+    /* Agar ukuran bagian kiri bisa fleksibel */
+}
+
+/* CSS untuk tombol */
+.tombol-carirute {
+    margin-top: auto;
+    /* Agar tombol menempel ke bawah */
+    padding: 10px 20px;
+    background-color: #3498DB;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #4d8ac9;
+}
+
+/* CSS untuk tombol di sebelah kiri */
+.left-button-container {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.left-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #66B1F1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* CSS untuk bagian kanan */
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    /* Agar ukuran bagian kanan bisa fleksibel */
+}
+
+/* CSS untuk mengatur div Informasi-Bergas */
+.Informasi-Bergas {
+    display: flex;
+    justify-content: flex-end;
+    /* Mengatur agar div ada di sebelah kanan */
+    margin-top: 20px;
+}
+
+.gambar-container {
+    flex: 1;
+}
+
+.gambar-container img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+.informasi-text {
+    flex: 1;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.Informasi-Bergas ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin-left: 6px;
+}
+
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    /* Menempatkan tombol di atas gambar */
+}
+
+.prev {
+    left: 300px;
+    /* Menggeser tombol ke kiri dengan jarak 10px */
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 300px;
+    /* Menggeser tombol ke kanan dengan jarak 10px */
+    border-radius: 3px 0 0 3px;
+}
+
+.slideshow-container {
+    position: relative;
+    margin-top: 20px;
+    /* Sesuaikan dengan kebutuhan Anda */
+}
+
+.card {
+    max-width: 800px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* Sesuaikan dengan kebutuhan Anda */
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 7px 7px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

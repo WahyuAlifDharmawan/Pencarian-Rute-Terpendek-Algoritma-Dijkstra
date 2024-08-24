@@ -1,0 +1,126 @@
+@startuml ClassDiagram
+
+class Admin {
+    + id_admin: int
+    + email_admin: varchar
+    + password_admin: varchar
+    --
+    + get_data(email: varchar, password: varchar)
+}
+
+class TempatIbadah {
+    + id: int
+    + nama_ti: varchar
+    + latitude_ti: double
+    + longitude_ti: double
+    + kelurahan_ti: varchar
+    + type: varchar
+    + gambar_ti: varchar
+    --
+    + countAll(): int
+    + getUniqueTypes(): array
+    + getGambarTempatIbadah(): array
+    + save(data: array)
+    + update(id: int, data: array)
+    + delete(id: int)
+}
+
+class TempatFasilitasumum {
+    + id: int
+    + nama_fu: varchar
+    + latitude_fu: double
+    + longitude_fu: double
+    + gambar_fu: varchar
+    --
+    + countAll(): int
+    + save(data: array)
+    + update(id: int, data: array)
+    + delete(id: int)
+}
+
+class Perbatasan {
+    + id: int
+    + latitude_tp: double
+    + longitude_tp: double
+    --
+    + countAll(): int
+    + save(data: array)
+    + update(id: int, data: array)
+    + delete(id: int)
+}
+
+class DashboardAdmin {
+    --
+    + index()
+}
+
+class DataTempatIbadah {
+    --
+    + TampilData()
+    + index()
+    + simpanTempatIbadah()
+    + edit_tempat(id: int)
+    + hapus_tempat(id: int)
+}
+
+class DataFasilitasUmum {
+    --
+    + TampilData()
+    + index()
+    + simpanFasilitasUmum()
+    + edit_fasilitas(id: int)
+    + hapus_fasilitas(id: int)
+}
+
+class DataTitikPerbatasan {
+    --
+    + TampilData()
+    + index()
+    + simpanTitikPerbatasan()
+    + edit_titik(id: int)
+    + hapus_titik(id: int)
+}
+
+class Login {
+    --
+    + index()
+    + login_action()
+    + logout()
+}
+
+class LandingUser {
+    --
+    + index()
+}
+
+class CariRute {
+    --
+    + index()
+}
+
+class TentangUser {
+    --
+    + index()
+}
+
+Admin -- Login : uses
+Admin --> DataTempatIbadah : manages
+Admin --> DataFasilitasUmum : manages
+Admin --> DataTitikPerbatasan : manages
+
+DashboardAdmin -- TempatIbadah : uses
+DashboardAdmin -- TempatFasilitasumum : uses
+DashboardAdmin -- Perbatasan : uses
+
+DataTempatIbadah -- TempatIbadah : manages
+DataFasilitasUmum -- TempatFasilitasumum : manages
+DataTitikPerbatasan -- Perbatasan : manages
+
+LandingUser -- TempatIbadah : uses
+LandingUser -- TempatFasilitasumum : uses
+
+CariRute -- TempatIbadah : uses
+CariRute -- TempatFasilitasumum : uses
+CariRute -- Perbatasan : uses
+
+@enduml
